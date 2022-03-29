@@ -1,0 +1,21 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer div ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  width: 500px;
+}
+
+footer div ul li a{
+  text-decoration: none;
+}
+
+p {
+  margin-right: 100px;
+}
