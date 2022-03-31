@@ -13,6 +13,7 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { RatingBarComponent } from './rating-bar/rating-bar.component';
 import { ListStudentComponent } from './list-student/list-student.component';
 import { CustomerComponent } from './customer/customer.component';
+import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CustomerComponent } from './customer/customer.component';
     ProgressBarComponent,
     RatingBarComponent,
     ListStudentComponent,
-    CustomerComponent
+    CustomerComponent,
+    CountdownTimerComponent
   ],
   imports: [
     BrowserModule,
