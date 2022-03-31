@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-news';
+  num: number;
+
+  getNum(val: number) {
+    this.num = val;
+  }
 }

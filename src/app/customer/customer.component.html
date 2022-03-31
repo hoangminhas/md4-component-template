@@ -1,0 +1,38 @@
+<h2 class="text-center">{{title}}</h2>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">CustomerNo</th>
+    <th scope="col">Name</th>
+    <th scope="col">Address</th>
+    <th scope="col">City</th>
+    <th scope="col">Country</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let customer of customers; let o = odd; let e = even;" [ngClass]="{ odd: o, even: e}">
+    <td>{{customer.customerNo}}</td>
+    <td>{{customer.name}}</td>
+    <td>{{customer.address}}</td>
+    <td>{{customer.city}}</td>
+    <td>{{customer.country}}</td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="container">
+  <ul>
+    <li *ngFor="let employee of employees">
+      <span>Name: {{employee.name}}</span><br>
+      <span>Email: {{employee.email}}</span>
+      <span>
+        <ul>
+          <li *ngFor="let skill of employee.skills">
+            <span>Skill: {{skill.skill}}</span><br>
+            <span>Year of Exp: {{skill.exp}}</span>
+          </li>
+        </ul>
+      </span>
+    </li>
+  </ul>
+</div>
